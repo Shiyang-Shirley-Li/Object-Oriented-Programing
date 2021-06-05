@@ -188,8 +188,16 @@ public class LoopPatterns {
 		return returnVal;
 	}
 	
+	/**
+	 * A helper method of timesTable
+	 * @param maxNumber, an integer number from 1-9 (inclusive) representing
+	 *  how many rows and columns there are in a times table
+	 * @param spacing, an integer number that is a number greater than 1 
+	 *  which represents the width a column of the times table must take up
+	 * @param rowNum, the rowNum-th row in the times table
+	 * @return rowNum-th row in the times table
+	 */
 	private static String numRows(int maxNumber, int spacing, int rowNum) {
-		
 		String numRow = "";
 		String spaces = space(spacing);
 		
@@ -207,6 +215,14 @@ public class LoopPatterns {
 		return numRow;
 	}
 	
+	/**
+	 * A helper method of timesTable
+	 * @param maxNumber, an integer number from 1-9 (inclusive) representing
+	 *  how many rows and columns there are in a times table
+	 * @param spacing, an integer number that is a number greater than 1 
+	 *  which represents the width a column of the times table must take up
+	 * @return minusNotation row
+	 */
 	private static String minusNotation(int maxNumber, int spacing) {
 		String minus = "";
 		for(int i = 0; i < spacing * maxNumber; i++) {
@@ -215,6 +231,12 @@ public class LoopPatterns {
 		return minus;
 	}
 	
+	/**
+	 * A helper method of timesTable
+	 * @param spacing, an integer number that is a number greater than 1 
+	 *  which represents the width a column of the times table must take up
+	 * @return spaces between each number 
+	 */
 	private static String space(int spacing) {
 		int intervals = spacing - 1;
 		String spaces = "";
